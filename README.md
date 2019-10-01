@@ -1,7 +1,7 @@
-#processo seletivo dti digital 
+# processo seletivo dti digital 
 API criada para atender o desafio proposto pelo recrutamento da DTI Digital.
 
-###Tecnologias Adotadas
+### Tecnologias Adotadas
 - [x] Java 8 (*1.8.0_191*)
 - [x] Apache Maven
 - [x] Spring Boot Framework
@@ -10,7 +10,7 @@ API criada para atender o desafio proposto pelo recrutamento da DTI Digital.
 - [x] Lombok
 - [x] H2 Database
 
-###Configuração do Backend
+### Configuração do Backend
 Este projeto foi desenvolvido utilizando a arquitetura Spring e conta com apenas um módulo para seu completo funcionamento.
 
 Antes de subir a aplicação, é necessário executar o comando abaixo dentro da pasta **jogodavelha**:
@@ -28,7 +28,7 @@ Após iniciar a aplicação, a API já estará pronta para uso, basta apenas uti
 *Foi adotado como padrão a porta **8080** e o prefixo **jogo-da-velha***:
 >localhost:8080/jogo-da-velha
 
-#####URL's
+##### URL's
 >POST /game
 
 >POST /game/{id}/movement
@@ -36,7 +36,7 @@ Após iniciar a aplicação, a API já estará pronta para uso, basta apenas uti
 >GET /game/show-atual/{id}
 
 
-###Considerações
+### Considerações
 Foi utilizado o banco de dados H2 (memory) para que fosse feita a persistência dos dados na aplicação, toda vez que a
 aplicação é iniciada, o banco é re-criado.
 O script responsável pela criação das tabelas é o: **data.sql**.
@@ -51,7 +51,7 @@ A medida em que as jogadas são feitas, é feita uma validação para checar se 
 realmente o turno do jogador, e se a partida realmente existe. Caso passe em todos esses cenários, é persistida a jogada, atualizando
 o arquivo que guarda os dados daquela partida, e alterando a vez de jogar.
 
-###Implementações Adicionais
+### Implementações Adicionais
 Além do preposto pela prova, eu optei em incluir alguns novos cenários que no meu entidimento poderia agregar valor a aplicação.
 São eles:
 - [x] Foi incluído no modelo de dados colunas para guardar o ínicio e o fim de uma partida, para que, se no futuro for necessário checar a duração
@@ -64,10 +64,9 @@ do serviço. Utilizando a lógica de posições 1 e -1 para checar os vencedores
 - [x] Foi criado um endpoint para que ao ser chamado passando o UUID da partida, seja retornado no console a condição atual do tabuleiro, seguindo o padrão 
 enviado na prova.
 
-#####Dica
+##### Dica
 É possivel acessar o banco em memória acessando: 
 >**localhost:8080/jogo-da-velha/h2**
  
 informando o login e senha (bancomemoria)
 com isso é possível observar os dados criados, observar a estrutura de dados, e se necessário, incluir/editar os dados na mão.
-
