@@ -70,3 +70,10 @@ enviado na prova.
  
 informando o login e senha (bancomemoria)
 com isso é possível observar os dados criados, observar a estrutura de dados, e se necessário, incluir/editar os dados na mão.
+
+##### Possíveis Melhorias
+- Implementação de testes de integração e unitários para validar a aplicação.
+- Validar jogadas inexistentes e em posições já ocupadas.
+- Ao chamar o endpoint que exibe o tabuleiro no console, além de exibir no console, o retorno vir um json com as posições preenchidas.
+- Salvar os arquivos referentes ao jogo em Base64.
+- Melhoria no sistema de badRequest.
