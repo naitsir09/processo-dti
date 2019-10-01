@@ -1,6 +1,9 @@
 # Processo seletivo dti digital 
 API criada para atender o desafio proposto pelo recrutamento da dti digital.
 
+###### Autor
+[Cristian Castro](https://br.linkedin.com/in/cristiancastro09)
+
 ### Tecnologias Adotadas
 - [x] Java 8 (*1.8.0_191*)
 - [x] Apache Maven
