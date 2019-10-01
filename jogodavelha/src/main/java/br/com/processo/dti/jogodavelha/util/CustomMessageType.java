@@ -5,13 +5,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * Classe para Message genericas
+ */
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class CustomMessageType {
-    private String msg;
-    private String winner;
+    private String msg = "";
+    private String winner = "";
 
     public CustomMessageType(String msg) {
         this.msg = msg;
