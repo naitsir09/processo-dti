@@ -103,16 +103,15 @@ public class AcoesTabuleiro {
      *
      * @param tabuleiro matriz do tabuleiro
      */
-    /* TODO refactor to for x and y */
     public void exibirTabuleiroConsole(int[][] tabuleiro) {
-        System.out.println((tabuleiro[0][2] == 0 ? "x(0)y(2)" : tabuleiro[0][2] == 1 ? "O" : "X") + "|" +
-                (tabuleiro[1][2] == 0 ? "x(1)y(2)" : tabuleiro[1][2] == 1 ? "O" : "X") + "|" +
-                (tabuleiro[2][2] == 0 ? "x(2)y(2)" : tabuleiro[2][2] == 1 ? "O" : "X"));
-        System.out.println((tabuleiro[0][1] == 0 ? "x(0)y(1)" : tabuleiro[0][1] == 1 ? "O" : "X") + "|" +
-                (tabuleiro[1][1] == 0 ? "x(1)y(1)" : tabuleiro[1][1] == 1 ? "O" : "X") + "|" +
-                (tabuleiro[2][1] == 0 ? "x(2)y(1)" : tabuleiro[2][1] == 1 ? "O" : "X"));
-        System.out.println((tabuleiro[0][0] == 0 ? "x(0)y(0)" : tabuleiro[0][0] == 1 ? "O" : "X") + "|" +
-                (tabuleiro[1][0] == 0 ? "x(1)y(0)" : tabuleiro[1][0] == 1 ? "O" : "X") + "|" +
-                (tabuleiro[2][0] == 0 ? "x(2)y(0)" : tabuleiro[2][0] == 1 ? "O" : "X"));
+        System.out.println((tabuleiro[0][2] == 0 ? " " : tabuleiro[0][2] == 1 ? "O" : "X") + "|" +
+                (tabuleiro[1][2] == 0 ? " " : tabuleiro[1][2] == 1 ? "O" : "X") + "|" +
+                (tabuleiro[2][2] == 0 ? " " : tabuleiro[2][2] == 1 ? "O" : "X"));
+        System.out.println((tabuleiro[0][1] == 0 ? " " : tabuleiro[0][1] == 1 ? "O" : "X") + "|" +
+                (tabuleiro[1][1] == 0 ? " " : tabuleiro[1][1] == 1 ? "O" : "X") + "|" +
+                (tabuleiro[2][1] == 0 ? " " : tabuleiro[2][1] == 1 ? "O" : "X"));
+        System.out.println((tabuleiro[0][0] == 0 ? " " : tabuleiro[0][0] == 1 ? "O" : "X") + "|" +
+                (tabuleiro[1][0] == 0 ? " " : tabuleiro[1][0] == 1 ? "O" : "X") + "|" +
+                (tabuleiro[2][0] == 0 ? " " : tabuleiro[2][0] == 1 ? "O" : "X"));
     }
 }

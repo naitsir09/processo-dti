@@ -84,7 +84,7 @@ public class JogoDaVelhaRecurso {
      * @param id da partida
      * @throws IOException exception IO
      */
-    @GetMapping("/game/show-atual/{id}")
+    @GetMapping("/game/{id}")
     public void exibirTabuleiroConsole(@PathVariable String id) throws IOException {
         this.jogoDaVelhaServico.exibirTabuleiroConsole(id);
     }

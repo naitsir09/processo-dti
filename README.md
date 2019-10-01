@@ -1,5 +1,5 @@
-# processo seletivo dti digital 
-API criada para atender o desafio proposto pelo recrutamento da DTI Digital.
+# Processo seletivo dti digital 
+API criada para atender o desafio proposto pelo recrutamento da dti digital.
 
 ### Tecnologias Adotadas
 - [x] Java 8 (*1.8.0_191*)
@@ -26,14 +26,14 @@ Para iniciar a aplicação fora da IDE, basta executar o comando abaixo dentro d
 Após iniciar a aplicação, a API já estará pronta para uso, basta apenas utilizar uma ferramenta que teste os serviços RESTful.
 
 *Foi adotado como padrão a porta **8080** e o prefixo **jogo-da-velha***:
->localhost:8080/jogo-da-velha
+>localhost:8080/jogo-da-velha/api
 
 ##### URL's
 >POST /game
 
 >POST /game/{id}/movement
 
->GET /game/show-atual/{id}
+>GET /game/{id}
 
 
 ### Considerações
@@ -41,7 +41,7 @@ Foi utilizado o banco de dados H2 (memory) para que fosse feita a persistência 
 aplicação é iniciada, o banco é re-criado.
 O script responsável pela criação das tabelas é o: **data.sql**.
 
-Para salvar os jogos efetutados, ou seja, a matriz utilizada para montar o jogo da velha foi utilizada a baseada em arquivos, 
+Para salvar os jogos efetutados, ou seja, a matriz utilizada para montar o jogo da velha, foi utilizada a persistência baseada em arquivos, 
 gerando um arquivo com o UUID da partida e os dados da sua matriz no caminho:
 >src/main/resources/jogos/
 
@@ -55,7 +55,7 @@ o arquivo que guarda os dados daquela partida, e alterando a vez de jogar.
 Além do preposto pela prova, eu optei em incluir alguns novos cenários que no meu entidimento poderia agregar valor a aplicação.
 São eles:
 - [x] Foi incluído no modelo de dados colunas para guardar o ínicio e o fim de uma partida, para que, se no futuro for necessário checar a duração
-de uma partida é possível.
+de uma partida seja possível.
 - [x] Também foi incluído uma flag para guardar o status da partida, se ela foi finalizada ou não, para que não seja possível alterar dados de uma partida já finalizada.
 - [x] Para as mensagens de retorno eu optei por criar uma classe genérica de mensagens, visando o clean-code, que contém os atributos *msg* e *winner*, cobrindo 
 os retornos (não criei o atributo *status*, pois não exerguei a real necessidade do mesmo, já que, ele possuía um mesmo padrão da *msg*).
